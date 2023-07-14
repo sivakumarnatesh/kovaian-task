@@ -1,0 +1,38 @@
+.ProductContainer {
+  text-align: center;
+  .Title {
+    font-size: 25px;
+    font-weight: 700;
+    padding: 20px;
+  }
+  .Products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .Card {
+      margin: 20px 40px;
+      .CardImage img {
+        width: 250px;
+      }
+      .CardFooter {
+        background-color: rgb(218, 218, 218);
+        text-align: left;
+        padding: 15px 20px;
+        line-height: 25px;
+
+        .CardName {
+          font-size: 18px;
+        }
+        .CardDesc {
+          color: #898989;
+          font-size: 14px;
+        }
+        .CardPrice {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

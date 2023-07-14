@@ -1,0 +1,78 @@
+.Footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10rem;
+  
+  .FooterColumnOne {
+    width: 20%;
+    line-height: 34px;
+    margin: 0px 40px;
+    .ColumnOneTitle{
+        font-size: 22px;
+        font-weight: 600;
+        margin: 0px 10px;
+    }
+    .ColumnOneDesc{
+        margin: 20px 0px;
+        color:#1E2832;
+        font-size: 18px;
+        font-weight: 300;
+        font-family: inherit;
+    }
+    .ColumnOneLogos{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 60%;
+        cursor: pointer;
+    }
+  }
+  .FooterColumnTwo,
+  .FooterColumnThree,
+  .FooterColumnFour {
+    width: 20%;
+    .ColumnTwoTitle{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .ColumnTwoList{
+        margin: 20px 0px;
+        font-size: 18px;
+        color: #1E2832;
+        cursor: pointer;
+    }
+    .ColumnTwoList:hover{
+        text-decoration: underline;
+        
+    }
+  }
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    .Footer{
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+        .FooterColumnOne,.FooterColumnTwo,.FooterColumnThree,.FooterColumnFour{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 30px;
+            text-align: center;
+            
+        }
+    }
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .Footer{
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+        .FooterColumnOne,.FooterColumnTwo,.FooterColumnThree,.FooterColumnFour{
+            width: 40%;
+            
+        }
+    }
+}

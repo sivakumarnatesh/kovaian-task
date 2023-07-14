@@ -1,0 +1,81 @@
+.TopSellContainer {
+  text-align: center;
+  .Title {
+    font-size: 25px;
+    font-weight: 700;
+    padding: 20px;
+  }
+  .Btns{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 100px;
+  .CarouselBtn{
+    color: #B88E2F;
+    border: 1px solid #B88E2F;
+    border-radius: 8px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+  }
+}
+  .Products {
+    margin: 0px 90px;
+    .Card {
+      margin: 20px 10px;
+      .CardImage img {
+        width: 250px;
+      }
+      .CardFooter {
+        width: 210px;
+        background-color: rgb(218, 218, 218);
+        text-align: left;
+        padding: 15px 20px;
+        line-height: 25px;
+
+        .CardName {
+          font-size: 18px;
+        }
+        .CardDesc {
+          color: #898989;
+          font-size: 14px;
+        }
+        .CardPrice {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width:320px) and (max-width:1024px) {
+  .TopSellContainer {
+    .Btns{
+      margin: 0px 10px;
+  }
+  .Products {
+    margin: 0px 10px;
+    .Card {
+      margin: 20px 10px;
+      .CardImage img {
+        width: 80%;
+      }
+      .CardFooter {
+        width: 15%;
+        background-color: rgb(218, 218, 218);
+        text-align: left;
+        padding: 5px 33%;
+        line-height: 10px;
+
+        .CardName {
+          font-size: 0.5rem;
+        }
+        .CardDesc {
+          color: #898989;
+          font-size: 0.5rem;
+        }
+        .CardPrice {
+          font-size: 0.3rem;
+        }
+      }
+    }
+  }
+  }
+}

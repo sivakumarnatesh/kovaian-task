@@ -1,0 +1,78 @@
+.TestimonialContainer {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10rem;
+  .TestimonialHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px 0;
+    .TestimonialTitle {
+      font-size: 2rem;
+      font-weight: 800;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    }
+    .TestimonialDesc {
+      // width: 50%;
+    }
+  }
+  .TestimonialCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    .Card {
+      text-align: center;
+      padding: 40px;
+      width: 250px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 12px;
+      .CardImage {
+      }
+      .CardName {
+        color: #d9b46a;
+        font-weight: 700;
+        font-size: 18px;
+        margin: 10px 0;
+      }
+      .CardRole {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 10px 0;
+      }
+      .CardRating {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .CardReview {
+        font-size: 18px;
+        font-weight: 300;
+        color: #1e2832;
+        text-align: justify;
+      }
+    }
+  }
+}
+
+@media screen and (min-width:320px) and (max-width:1024px) {
+  .TestimonialContainer{
+    .TestimonialHeader{
+      .TestimonialDesc {
+        width: 50%;
+        text-align: center;
+      }
+    }
+  .TestimonialCard {
+    flex-wrap: wrap;
+    .Card{
+      width: 200px;
+      padding: 22px;
+    }
+  } 
+}
+}
